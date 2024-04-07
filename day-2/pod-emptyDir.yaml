@@ -1,4 +1,8 @@
 #k apply -f pod-emptyDir.yaml
+###################################################
+# se o pod restartar o volume continuara
+# mas se o pod for deletado, o volume tambem sera
+###################################################
 apiVersion: v1
 kind: Pod
 metadata:
