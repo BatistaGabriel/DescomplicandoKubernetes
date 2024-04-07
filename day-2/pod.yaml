@@ -11,7 +11,10 @@ spec:
   - image: nginx
     name: nginx
     resources: {}
-  - image: httpd
-    name: apache
+  - image: busybox
+    name: busybox
+    args: 
+    - sleep
+    - "600"
   dnsPolicy: ClusterFirst
   restartPolicy: Always
