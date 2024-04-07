@@ -8,7 +8,7 @@ metadata:
   name: girus
 spec:
   containers:
-  - image: alpine
+  - image: nginx
     name: girus
     resources: {}
   dnsPolicy: ClusterFirst
