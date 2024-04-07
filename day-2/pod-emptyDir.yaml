@@ -11,7 +11,7 @@ spec:
     name: webserver
     volumeMounts:
     - mountPath: /giropops
-      name: primero-emptyDir
+      name: primeiro-emptydir
     resources:
       limits:
         cpu: "1"
@@ -22,6 +22,6 @@ spec:
   dnsPolicy: ClusterFirst
   restartPolicy: Always
   volumes:
-  - name: primeiro-emptyDir
+  - name: primeiro-emptydir
     emptyDir:
       sizeLimit: "256Mi"
