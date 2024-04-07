@@ -11,5 +11,7 @@ spec:
   - image: nginx
     name: girus
     resources: {}
+  - image: ubuntu
+    name: ubuntu
   dnsPolicy: ClusterFirst
   restartPolicy: Always
