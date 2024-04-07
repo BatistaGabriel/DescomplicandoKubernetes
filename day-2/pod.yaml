@@ -1,0 +1,15 @@
+#k apply -f pod.yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+    run: girus
+    service: webserver
+  name: girus
+spec:
+  containers:
+  - image: alpine
+    name: girus
+    resources: {}
+  dnsPolicy: ClusterFirst
+  restartPolicy: Always
