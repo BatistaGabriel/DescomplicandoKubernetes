@@ -9,9 +9,9 @@ metadata:
 spec:
   containers:
   - image: nginx
-    name: girus
+    name: nginx
     resources: {}
-  - image: ubuntu
-    name: ubuntu
+  - image: httpd
+    name: apache
   dnsPolicy: ClusterFirst
   restartPolicy: Always
