@@ -6,6 +6,14 @@ Este repositório foi criado para ter todos os materiais deste módulo do curso 
 
 ### Rollout
 
+#### Status
+
+Para acompanhar o status de um deployment, podemos executar o seguinte comando:
+
+```bash
+k rollout status deplyment -n <namespace> <deployment name>
+```
+
 #### Undo Latest
 
 Para reverter um apply, podemos executar o seguinte comando:
