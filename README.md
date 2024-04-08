@@ -23,3 +23,11 @@ Para ver detalhes de um revisão específica, podemos executar o comando:
 k rollout history deployment -n <namespace> <deployment name> --revision <revision number>
 ```
 
+### Rollback
+
+Para reverter para uma revision específica, podemos executar o comando:
+
+```bash
+k rollout undo deployment -n <namespace> <deployment name> --to-revision=<revision number>
+```
+
