@@ -41,6 +41,14 @@ Para volta a executar, podemos usar o comando:
 k rollout resume deployment -n <namespace> <deployment name>
 ```
 
+#### Restart
+
+Para reiniciar o processo de um deployment, podemos usar o comando:
+
+```bash
+k rollout restar deployment -n <namespace> <deployment name>
+```
+
 #### Rollback
 
 Para reverter para uma revision específica, podemos executar o comando:
