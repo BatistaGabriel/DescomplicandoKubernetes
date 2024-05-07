@@ -1,0 +1,23 @@
+apiVersion: v1
+data:
+  nginx.conf: |
+    http{
+      server{
+        listen 80;
+        listen 443 ssl;
+        ssl_certificate /etc/nginx/tls/cert.crt;
+        ssl_certificate_key /etc/nginx/tls/private.key;
+
+        location / {
+          return 200 "Hello there o/";
+          add_header Content-Type text/plain;
+        }
+      }
+    }
+kind: ConfigMap
+metadata:
+  creationTimestamp: "2024-05-07T16:17:02Z"
+  name: nginx-configmap
+  namespace: default
+  resourceVersion: "115652"
+  uid: f97d0a1b-2b8f-400b-8379-62e712df0cb8
